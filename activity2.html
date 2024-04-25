@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style=" background-color: yellow; border-radius: 10px; border-width: 5px;"><p>
+        Username:<input type="text" >
+        <br>
+        Email:   <input type="email"><br>
+        Password: <input type="password" maxlength="8">
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <div id="welcomeMessage" class="hidden">
+            <h2>Welcome!</h2>
+            <p>Thank you for submitting the form.</p>
+        </div>
+<script>
+        setTimeout(function() {
+        document.getElementById('welcomeMessage').classList.remove('hidden');
+    }, 2000);
+</script>
+
+    </p>
+    </form>
+</body>
+</html>
